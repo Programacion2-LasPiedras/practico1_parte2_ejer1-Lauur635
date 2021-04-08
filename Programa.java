@@ -1,24 +1,37 @@
 import java.util.Scanner;
 
-public class Programa {
-	
-	 //Definición de las variables para cargar los datos
-	 
-	 Scanner entrada=new Scanner(System.in);
-	
-	 void iniciar(){
-				
-		cargar();
-		imprimir();
-	
-	}
-//Escribir aquí el método cargar
-//Este método deberá cargar desde el teclado los datos necesarios
+ class Main {
 
+	public static void main(String[] args) {
+		
+		
+	        Scanner sc = new Scanner(System.in);
+	        String nombre;
+	        int edad;
+	        double altura;
+	        long cédula;
+	       
+	        System.out.println("Nombre ");
+	           nombre = sc.nextLine();
+	        
+	        System.out.print("Edad: ");
+	          edad = sc.nextInt();
+	          
+	         System.out.print("Ingrese altura: ");
+	         altura = sc.nextDouble();
 
-//Escribir aquí el método imprimir
-//Este método deberá mostrar en pantalla  los datos cargados
-
-
+	         
+	        System.out.print("Cédula  ");
+	         cédula = sc.nextLong();
+	        
+	        System.out.println("Nombre: "+nombre);
+	        System.out.println("Edad: "+ edad);
+	        System.out.println("Cédula: "+cédula);
+	        System.out.println("Altura: "+altura);
+	    
+		
+		
+		
+  }
 
 }
